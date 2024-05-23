@@ -1,0 +1,39 @@
+{
+
+    "search": "بحث",
+    "choose_speciality": "اختر التخصص",
+    "location": "موقع",
+    "search_icon": "بحث",
+    "arrow_drop_down": "سهم لأسفل",
+"choose speciality":"اختر التخصص"
+    ,
+    "general" :{
+        "hello":"hola"
+    }
+
+
+,        "carousel": {
+          "item": {
+            "title": "دكتور",
+            "name": "دكتور حمبوزو",
+            "description": "دكتور حمبوزو",
+            "oldPrice": "100 ج.م.",
+            "showButton": "عرض"
+          },
+          "navigation": {
+            "previous": "السابق",
+            "next": "التالي"
+          }
+        }
+      ,
+      
+        "navbar": {
+          "home": "الرئيسية",
+          "medical_services": "الخدمات الطبية",
+          "contact_us": "اتصل بنا",
+          "book_a_doctor": "احجز طبيباً",
+          "add_your_clinic": "أضف عيادتك",
+          "sign_in": "تسجيل الدخول"
+      }
+
+}

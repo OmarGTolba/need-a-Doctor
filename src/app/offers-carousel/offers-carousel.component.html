@@ -1,0 +1,14 @@
+<ngx-slick-carousel class="carousel mt-5" 
+#slickModal="slick-carousel" 
+[config]="slideConfig" 
+(init)="slickInit($event)"
+(breakpoint)="breakpoint($event)"
+(afterChange)="afterChange($event)"
+(beforeChange)="beforeChange($event)">
+  <div ngxSlickItem *ngFor="let slide of slides; let i = index;" class="slide row flex-wrap  gy-5">
+
+
+      <app-offers-card ></app-offers-card>
+   
+  </div>
+</ngx-slick-carousel>

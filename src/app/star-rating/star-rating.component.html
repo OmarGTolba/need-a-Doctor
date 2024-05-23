@@ -1,0 +1,5 @@
+<div class="star-rating mt-3">
+  <ng-container *ngFor="let star of stars; let i = index">
+    <mat-icon class="star" [class.filled]="i < rating">star</mat-icon>
+  </ng-container>
+</div>

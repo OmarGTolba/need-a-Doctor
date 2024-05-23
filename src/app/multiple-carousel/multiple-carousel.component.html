@@ -1,0 +1,26 @@
+<!-- multiple-carousel.component.html -->
+<div class="carousel-container position-relative">
+  <div class="carousel-inner" #carouselInner>
+      <div class="carousel-item rounded-2 text-center border-1 m-4 h-25 w-25" *ngFor="let item of carouselItems">
+          <div class="w-50 m-auto border-2 ">
+              <img class="w-100 rounded-circle" src="../../assets/ImgPhoto.jpeg" alt="">
+          </div>
+          <h4 class="mt-5">{{ 'carousel.item.title' | translate }}</h4>
+          <h4>{{ 'carousel.item.name' | translate }}</h4>
+          <p>{{ 'carousel.item.description' | translate }}</p>
+          <p>{{ 'carousel.item.description' | translate }}</p>
+          <p class="text-decoration-line-through text-danger"><span>EGP</span> {{ 'carousel.item.oldPrice' | translate }}</p>
+          <app-star-rating [rating]="3"></app-star-rating>
+          <br>
+          <button class="mt-2 bg-primary rounded-2 m-1 px-3 py-1 text-white border-0">{{ 'carousel.item.showButton' | translate }}</button>
+      </div>
+  </div>
+  <button (click)="handleNavigation('prev')" class="carousel-control-prev" type="button">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">{{ 'carousel.navigation.previous' | translate }}</span>
+  </button>
+  <button (click)="handleNavigation('next')" class="carousel-control-next" type="button">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">{{ 'carousel.navigation.next' | translate }}</span>
+  </button>
+</div>

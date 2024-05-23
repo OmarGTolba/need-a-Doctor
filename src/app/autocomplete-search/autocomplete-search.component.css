@@ -1,0 +1,85 @@
+.autocomplete-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  #search-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #f1f1f1;
+  }
+  .autocomplete-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+  }
+  
+  .icon-left, .icon-right {
+    cursor: pointer;
+  }
+  
+  .icon-left {
+    margin-right: 10px; /* Adjust spacing as needed */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+ 
+  }
+  
+  .icon-right {
+    margin-left: 10px; /* Adjust spacing as needed */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #f0f0f0;
+  }
+  

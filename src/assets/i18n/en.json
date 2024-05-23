@@ -1,0 +1,30 @@
+{
+    "general" :{
+        "hello":"hello"
+    }
+
+
+,
+    "carousel": {
+      "item": {
+        "title": "Doctor",
+        "name": "Doctor Hambozo",
+        "description": "Doctor Hambozo",
+        "oldPrice": "100 EGP",
+        "showButton": "Show"
+      },
+      "navigation": {
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "navbar": {
+        "home": "Home",
+        "medical_services": "Medical Services",
+        "contact_us": "Contact Us",
+        "book_a_doctor": "Book A Doctor",
+        "add_your_clinic": "Add Your Clinic",
+        "sign_in": "Sign In"
+      }
+  
+}

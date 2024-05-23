@@ -1,0 +1,14 @@
+<div class="autocomplete-container text-dark m-auto" [style.width]="'100%'">
+  <div class="icon-left">
+    <ng-content select="[icon-left]"></ng-content>
+  </div>
+  <input type="text" id="search-input" class="text-center w-100 rounded-3" (click)="clickInput()" [(ngModel)]="query" (input)="filterItems()" [placeholder]="placeholder | translate" />
+  <div class="icon-right">
+    <ng-content select="[icon-right]"></ng-content>
+  </div>
+  <div *ngIf="filteredItems.length || clicked" class="autocomplete-items text-dark">
+    <div *ngFor="let item of filteredItems" (click)="selectItem(item)">
+      {{item}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary d-flex position-fixed z-3 right-0 left-0 w-100" [ngStyle]="{ 'flex-direction': direction === 'rtl' ? 'row-reverse' : 'row' }">
+  <div class="container-fluid d-flex w-75"  [ngStyle]="{ 'flex-direction': direction === 'rtl' ? 'row-reverse' : 'row' }">
+    <!-- Left section -->
+    <div class="col-md-2 d-flex justify-content-center align-items-center">
+      <img class="img-fluid" style="width: 150px;" src="../../assets/logo-newLogo.png" alt="Logo">
+    </div>
+
+    <!-- Middle section -->
+    <div class="col-md-9 ms-5 text-center justify-content-center collapse navbar-collapse align-items-center " id="navbarSupportedContent">
+      <div class="my-3 ">
+        <a class="navbar-brand mx-2" href="#"><i class="fa fa-home icon"></i>{{ 'navbar.home' | translate }}</a>
+      </div>
+      <div class="my-3">
+        <a class="navbar-brand mx-2" href="#"><i class="fa-solid fa-briefcase-medical icon"></i>{{ 'navbar.medical_services' | translate }}</a>
+      </div>
+      <div class="my-3">
+        <a class="navbar-brand mx-2" href="#"><i class="fa-solid fa-phone-flip icon"></i>{{ 'navbar.contact_us' | translate }}</a>
+      </div>
+      <div class="my-3">
+        <a class="navbar-brand mx-2" href="#"><i class="fa-solid fa-user-doctor icon"></i>{{ 'navbar.book_a_doctor' | translate }}</a>
+      </div>
+  
+<div>
+  <a class="py-3   add  navbar-brand text-decoration-none text-black "><i class="fa fa-plus icon" aria-hidden="true"></i>{{ 'navbar.add_your_clinic' | translate }}</a>
+</div>
+  
+
+
+<div class=" my-3 d-block d-lg-none ">
+  <select (change)="changeLang($event)" class="border-0 no-border-focus">
+    <option value="en">English</option>
+    <option value="ar">العربية</option>
+  </select>
+  <mat-icon class="global-icon">public</mat-icon>
+</div>
+</div>
+
+    <!-- Right section -->
+    <div class="col-md-2 d-flex justify-content-end align-items-center">
+      <a href="#" class="btn btn-primary ml-3 navbar-brand text-white">{{ 'navbar.sign_in' | translate }}</a>
+    </div>
+  </div>
+
+  <!-- Burger icon for mobile -->
+  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="d-flex justify-content-center  d-none d-lg-block align-items-center mx-5">
+    <select (change)="changeLang($event)" class="border-0 no-border-focus">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+    </select>
+    <mat-icon class="global-icon">public</mat-icon>
+  </div>
+</nav>

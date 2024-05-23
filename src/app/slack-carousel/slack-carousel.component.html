@@ -1,0 +1,14 @@
+<ngx-slick-carousel class="carousel d-flex w-100 justify-content-between  " 
+#slickModal="slick-carousel" 
+[config]="slideConfig" 
+(init)="slickInit($event)"
+(breakpoint)="breakpoint($event)"
+(afterChange)="afterChange($event)"
+(beforeChange)="beforeChange($event)">
+  <div ngxSlickItem *ngFor="let slide of slides; let i = index;" class="slide row flex-wrap  d-flex justify-content-between ">
+
+
+      <app-booking-card [image]="'../../assets/ImgPhoto.jpeg'"></app-booking-card>
+   
+  </div>
+</ngx-slick-carousel>

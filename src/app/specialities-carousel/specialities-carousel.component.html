@@ -1,0 +1,18 @@
+<!-- multiple-carousel.component.html -->
+<div  class="carousel-container m-auto position-relative ">
+    <div class="carousel-inner " #carouselInner>
+      <div  class="carousel-item  border-1 m-2  h-25  w-25" *ngFor="let item of carouselItems" >
+     
+        <app-booking-card [image]="'../../assets/ImgPhoto.jpeg'"></app-booking-card>
+      </div>
+    </div>
+    <button (click)="handleNavigation('prev')" class="carousel-control-prev" type="button">
+      <mat-icon style="font-size: 72px !important; z-index: 3; width: 500px; height: 200px;">chevron_left</mat-icon>  
+      <span class="sr-only">Previous</span>
+    </button>
+    <button (click)="handleNavigation('next')" class="carousel-control-next" type="button"> 
+      <mat-icon style="font-size: 72px !important; z-index: 3; width: 500px; height: 200px;">chevron_right</mat-icon>  
+      <span class="sr-only bg-secondary" style="color: #ccc;">Next</span>
+    </button>
+  </div>
+  
