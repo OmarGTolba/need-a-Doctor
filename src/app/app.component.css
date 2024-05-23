@@ -10,7 +10,24 @@ mat-icon{
 height: 30px;
 }
 
+i{
+    color: #0d6efd;
+    font-size: 30px;
+    width: 45px;
+height: 30px;
 
+}
+
+
+.dot.active{
+    background-color: #0d6efd;
+}
 .collapse.show {
     display: block !important;
+  }
+
+
+  .rounded-circle{
+    width: 15px !important;
+    height: 15px !important;
   }
