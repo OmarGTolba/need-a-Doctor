@@ -2,7 +2,7 @@
 
 
 
-<div style="padding-top: 250px" class="contain">
+<div style="padding-top: 150px" class="contain">
   <app-title [title]="'3 Steps to Better Health with 3ayzDoctor.com'" [text]="'Do this basic things and have a healthy life'"></app-title>
 </div>
 
@@ -49,14 +49,88 @@
   <app-title [title]="'Exclusive offers from medical services'" [text]="'enjoy healthy life deals and offers from 3ayz Doctor'"></app-title>
   <div class="row d-flex  justify-content-between  ">
     <div class="col-md-4 my-3"><img src="../assets/pic 10.png" class=" m-auto" alt="" style="width: 100%;"> </div>
-    <div class="col-md-4 "><img src="../assets/pic 10.png" class=" m-auto" alt="" style="width: 100%;"> </div>
+    <div class="col-md-4 my-3"><img src="../assets/pic 10.png" class=" m-auto" alt="" style="width: 100%;"> </div>
     <div class="col-md-4 my-3"><img src="../assets/pic 10.png" class=" m-auto" alt="" style="width: 100%;"> </div>
   </div>
   
   
+
   
+<div>
   
+<div id="carouselExampleCaptions" class="carousel slide d-flex justify-content-center w-50 m-auto" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="w-100 p-3 my-3 border rounded-3 text-center border-1 border-black ">
+
+        <app-star-rating [starColor] ="'#0d6efd'" [rating]="5" ></app-star-rating>
+  
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, optio.</p>
+
+        
+        <div class="d-flex justify-content-center   align-items-center ">
+          <i class="material-icons mb-1">person</i>
+          <h4 >
+            Someone Name
+          </h4>
+        </div>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="w-100 text-center p-3 my-3 rounded-3 border border-1  border-black ">
+
+        <app-star-rating [starColor] ="'#0d6efd'" [rating]="5" ></app-star-rating>
+  
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, dolore.</p>
+      
+  
+        <div class="d-flex justify-content-center   align-items-center ">
+          <i class="material-icons mb-1">person</i>
+          <h4 >
+            Someone Name
+          </h4>
+        </div>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+   <div class="w-100 text-center p-3 my-3 rounded-3 border border-1 border-black ">
+  
+    <app-star-rating [starColor] ="'#0d6efd'" [rating]="5" ></app-star-rating>
+  
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, rem?</p>
+      
+     <div class="d-flex justify-content-center   align-items-center ">
+      <i class="material-icons mb-1">person</i>
+      <h4 >
+        Someone Name
+      </h4>
+    </div>
+    
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+<div class="w-50  m-auto text-center">
+  <button type="button" class="rounded-circle dot border-0 active"  [class.active]="currentSlideIndex === 0" (click)="setCurrentSlideIndex(0)" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" class="rounded-circle dot border-0"  [class.active]="currentSlideIndex === 1" (click)="setCurrentSlideIndex(1)" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" class="rounded-circle dot border-0"  [class.active]="currentSlideIndex === 2" (click)="setCurrentSlideIndex(2)" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+</div>
+</div>
+
+
+
+
 
 <app-collapse-footer></app-collapse-footer>
 <app-footer></app-footer>
