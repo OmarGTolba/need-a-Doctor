@@ -7,3 +7,6 @@ i{
 .add{
     border: 1px tomato dotted;
 }
+ a  ,i{
+    display: flex !important;
+}

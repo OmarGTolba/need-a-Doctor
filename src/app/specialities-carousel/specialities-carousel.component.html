@@ -1,9 +1,9 @@
 <!-- multiple-carousel.component.html -->
 <div  class="carousel-container m-auto position-relative ">
     <div class="carousel-inner " #carouselInner>
-      <div  class="carousel-item  border-1 m-2  h-25  w-25" *ngFor="let item of carouselItems" >
+      <div  class="carousel-item  border-1   h-25  w-25" *ngFor="let item of carouselItems" >
      
-        <app-booking-card [image]="'../../assets/ImgPhoto.jpeg'"></app-booking-card>
+        <app-booking-card [imageHeight]="'150px'" [image]="'../../assets/ImgPhoto.jpeg'"></app-booking-card>
       </div>
     </div>
     <button (click)="handleNavigation('prev')" class="carousel-control-prev" type="button">
