@@ -1,12 +1,12 @@
 <!-- multiple-carousel.component.html -->
 <div class="carousel-container position-relative">
   <div class="carousel-inner" #carouselInner>
-      <div class="carousel-item rounded-2 text-center border-1 m-4 h-25 w-25" *ngFor="let item of carouselItems">
+      <div class="carousel-item rounded-2 text-center border-1 m-4 h-25 w-25 px-5" *ngFor="let item of carouselItems">
           <div class="w-50 m-auto border-2 ">
               <img class="w-100 rounded-circle" src="../../assets/ImgPhoto.jpeg" alt="">
           </div>
-          <h4 class="mt-5">{{ 'carousel.item.title' | translate }}</h4>
-          <h4>{{ 'carousel.item.name' | translate }}</h4>
+          <h5 class="mt-5">{{ 'carousel.item.title' | translate }}</h5>
+          <h5>{{ 'carousel.item.name' | translate }}</h5>
           <p>{{ 'carousel.item.description' | translate }}</p>
           <p>{{ 'carousel.item.description' | translate }}</p>
           <p class="text-decoration-line-through text-danger"><span>EGP</span> {{ 'carousel.item.oldPrice' | translate }}</p>
